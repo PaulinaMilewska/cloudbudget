@@ -7,7 +7,7 @@
 body{
 font-family: 'Lato', sans-serif;
 // width: 1440px;
-height: 2942px;
+// height: 2942px;
 width: 100%;
 }
 
@@ -65,7 +65,7 @@ header nav li:last-child{
 nav.hero__navbar {
     padding-top: 17px;
     // margin-right: 42px;
-    margin-right: -92px;
+    margin-right: 51px;
     word-spacing: px;
     width: 445px;
 }
@@ -137,7 +137,7 @@ nav.hero__navbar {
 // }
 
 .features{
-    min-height: 600px;
+    height: 600px;
     background-color: #FAFAFA;
     // height: 600px;
 }
@@ -239,7 +239,7 @@ ul.services-content{
 // technology
 
 .technology{
-    min-height: 500px;
+    height: 500px;
 }
 
 .technology .section-title{
@@ -670,51 +670,13 @@ input[type="text"]::placeholder {
     .banner-area .banner-img {
         min-height: 680px;
     }
-    // .hero__navbar {
-    //     ul{
-    //         margin-top: 50px;
-    //         position: absolute;
-    //         top: 50%;  left:50%;
-    //         transform: translate(-50%,-50%);
-    //         width: 100px;  height: 80px;
-    //         border: 1px solid #000;
-    //         cursor: pointer;
-    //     }
-        // ul li{
-        //     position: absolute;
-        //     left: 5%;  top: 45%;
-        //     width: 90%;   height: 7px;
-        //     background: #000;
-        //     list-style: none;
-        //     transition: .9s;
-        // }
-        // ul li:nth-child(1){
-        //     top: 10px;
-        //  }
-        // ul li:nth-child(3){
-        //     top: 61px;
-        // }
-        // ul:hover li:nth-child(1){
-        //     top: 50%;
-        //     transform: translateY(-50%) rotate(-45deg);
-        // }
-        // ul:hover li:nth-child(2){
-        //     opacity: 0;
-        // }
-        // ul:hover li:nth-child(3){
-        //     top: 50%;
-        //     transform: translateY(-50%) rotate(45deg);
-        // }
-    // }
+    
     body{
         overflow-x: hidden;
         margin: 0;
         min-width: 100%;
         height: auto;
     }
-    // body{
-    //     width: 100%;
-    // }
     header{
         flex-direction: column;
     }
@@ -723,6 +685,10 @@ input[type="text"]::placeholder {
     }
     header nav li{
         margin: 0 7px;
+    }
+    .features {
+        height: auto;
+        min-height: 600px;
     }
    
     section{
@@ -753,6 +719,9 @@ input[type="text"]::placeholder {
 
     .section-title {
         padding-bottom: 20px;
+    }
+    .technology{
+        height: auto;
     }
     .technology .section-title {
         margin-top: 0;

@@ -7,7 +7,6 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  height: 2942px;
   width: 100%;
 }
 
@@ -70,7 +69,7 @@ header nav li:last-child {
 
 nav.hero__navbar {
   padding-top: 17px;
-  margin-right: -92px;
+  margin-right: 51px;
   word-spacing: px;
   width: 445px;
 }
@@ -148,7 +147,7 @@ nav.hero__navbar {
 }
 
 .features {
-  min-height: 600px;
+  height: 600px;
   background-color: #FAFAFA;
 }
 
@@ -263,7 +262,7 @@ ul.services-content {
 }
 
 .technology {
-  min-height: 500px;
+  height: 500px;
 }
 
 .technology .section-title {
@@ -784,6 +783,10 @@ input[type="text"]::placeholder {
   header nav li {
     margin: 0 7px;
   }
+  .features {
+    height: auto;
+    min-height: 600px;
+  }
   section {
     padding: 0;
   }
@@ -811,6 +814,9 @@ input[type="text"]::placeholder {
   }
   .section-title {
     padding-bottom: 20px;
+  }
+  .technology {
+    height: auto;
   }
   .technology .section-title {
     margin-top: 0;
