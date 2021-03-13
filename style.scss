@@ -6,9 +6,9 @@
 
 body{
 font-family: 'Lato', sans-serif;
-// width: 1440px;
-// height: 2942px;
-width: 100%;
+width: 1440px;
+height: 2942px;
+// width: 100%;
 }
 
 ul, nav{
@@ -34,22 +34,21 @@ header{
     color: white;
     text-transform: uppercase;
     padding: 35px 100px 0;
-    
 }
 
-.logo, header nav ul{
+.header__logo, header nav ul{
     display: flex;
 }
 
-.logo{
+.header__logo{
     padding: 23px 0 0 70px;
 }
 
-.logo a img{
+.header__logo a img{
     margin: -3px 10px 0 -6px;
 }
 
-.logo a h2{
+.header__logo a h2{
     font-size: 18px;
 }
 
@@ -62,7 +61,7 @@ header nav li:last-child{
     margin-right: -92px;
 }
 
-nav.hero__navbar {
+nav.header__nav {
     padding-top: 17px;
     // margin-right: 42px;
     margin-right: 51px;
@@ -70,12 +69,12 @@ nav.hero__navbar {
     width: 445px;
 }
 
-.banner-area, .features, .technology{
+.banner, .features, .technology{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.banner-area p{
+.banner p{
     max-width: 800px;
     text-align: center;
     margin-bottom: 39px;
@@ -88,7 +87,7 @@ nav.hero__navbar {
     line-height: 150%;
 }
 
-.banner-area{
+.banner{
     position: relative;
     justify-content: center;
     height: 782px;
@@ -98,7 +97,7 @@ nav.hero__navbar {
     padding-top: 53px;
 }
 
-.banner-area .banner-img{
+.banner .banner__img{
         background-image:
         linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%),
         url('images/Rectangle_3.png');
@@ -111,7 +110,7 @@ nav.hero__navbar {
         z-index: -1;
         
 }
-.banner-area h1{
+.banner h1{
     font-style: normal;
     font-weight: bold;
     font-size: 72px;
@@ -120,7 +119,7 @@ nav.hero__navbar {
     text-transform: uppercase;
 }
 
-.banner-area a.banner-btn{
+.banner a.banner__btn{
     transform: translateY(16px);
     font-weight: 600;
     font-size: 14px;
@@ -131,10 +130,6 @@ nav.hero__navbar {
     border-radius: 6px;
 }
 
-// .features{
-//     background: #FAFAFA;
-//     z-index: -2;
-// }
 
 .features{
     height: 600px;
@@ -149,8 +144,7 @@ nav.hero__navbar {
     padding-bottom: 73px;
 }
 
-
-ul.services-content{
+ul.features__content{
     margin-top: 2px;
     width: 80%;
     margin-left: -37px;
@@ -158,7 +152,7 @@ ul.services-content{
     flex-wrap: wrap;
     justify-content: center;
 }
-.services-content li{
+.features__content li{
     padding: 0 15px;
     flex-basis: 33%;
     text-align: center;
@@ -169,18 +163,17 @@ ul.services-content{
 }
 
 
-.services-content li .services-img-1{
+.features__content li .features__img-1{
     background-image: url('images/Bg_1.png');
     width: 350px;
     height: 250px;
     border-radius: 8px;
     position: absolute;
     top: 100;
-    // z-index: -1;
     background-repeat: no-repeat;
     margin-left: 20px;
 }
-.services-content li  .services-img-2{
+.features__content li  .features__img-2{
     background-image: url('images/Bg_2.png');
     width: 350px;
     height: 250px;
@@ -190,30 +183,29 @@ ul.services-content{
     background-repeat: no-repeat;
     margin-left: 20px;
 }
-.services-content li  .services-img-3{
+.features__content li  .features__img-3{
     background-image: url('images/Bg_3.png');
     width: 350px;
     height: 250px;
     border-radius: 8px;
     position: absolute;
     top: 100;
-    // z-index: -1;
     background-repeat: no-repeat;
     margin-left: 20px;
 }
 
-.services-content-1 {
+.features__content-1 {
     margin-top: 125px;
     display: flex;
     justify-content: center;
 }
-.services-content-2 h4{
+.features__content-2 h4{
     font-weight: bold;
     font-size: 18px;
     padding: 34px 32px 0 35px;
     z-index: 10;
 }
-.services-content-2 p{
+.features__content-2 p{
     line-height: 17px;
     font-style: normal;
     font-weight: normal;
@@ -221,11 +213,11 @@ ul.services-content{
     margin: 18px 35px 5px 35px;
     padding-bottom: 21px;
 }
-.services-content-2 a{
+.features__content-2 a{
     font-size: 12px;
     color: #ED4C5C;
 }
-.services-content-2 {
+.features__content-2 {
     margin-left: 36px;
     margin-top: 32px;
     width: 293px;
@@ -236,7 +228,6 @@ ul.services-content{
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
 }
 
-// technology
 
 .technology{
     height: 500px;
@@ -247,14 +238,14 @@ ul.services-content{
     margin-top: 59px;
 }
 
-.technology-box{
+.technology__box{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 79%;
 
 }
-.technology-box li{
+.technology__box li{
     padding: 0 15px;
     flex-basis: 25%;
     text-align: center;
@@ -262,7 +253,7 @@ ul.services-content{
     justify-content: center;
     height: 100vh;
 }
-.technology-content {
+.technology__content {
     margin-top: 52px;
 }
 
@@ -282,14 +273,14 @@ img.for {
     margin-top: 13px;
     margin-bottom: 11px;
 }
-ul.technology-content{
+ul.technology__content{
     width: 80%;
     margin-left: -37px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.technology-content li{
+.technology__content li{
     padding: 0 15px;
     flex-basis: 25%;
     text-align: center;
@@ -299,7 +290,7 @@ ul.technology-content{
     text-align: center;
 }
 
-.technology-number{
+.technology__number{
     margin-left: 70px;
     margin-top: -7px;
     font-weight: bold;
@@ -310,21 +301,21 @@ ul.technology-content{
     position: absolute;
 }
 
-.technology-description {
+.technology__description {
     margin-left: 33px;
     margin-right: 33px;
 }
 
-.technology-description h4{
+.technology__description h4{
     font-size: 18px;
 }
 
-.technology-description p{
+.technology__description p{
     font-size: 12px;
     margin-top: 11px;
 }
 
-.technology-content li .technology-img-1{
+.technology__content li .technology-img-1{
     font-weight: bold;
     font-size: 100px;
     line-height: 120px;
@@ -336,7 +327,7 @@ ul.technology-content{
     background-repeat: no-repeat;
     margin-left: 20px;
 }
-.technology-content li  .technology-img-2{
+.technology__content li  .technology-img-2{
     width: 350px;
     height: 250px;
     border-radius: 8px;
@@ -346,18 +337,7 @@ ul.technology-content{
     background-repeat: no-repeat;
     margin-left: 20px;
 }
-.technology-content li  .technology-img-3{
-    width: 350px;
-    height: 250px;
-    border-radius: 8px;
-    position: absolute;
-    top: 100;
-    z-index: -1;
-    background-repeat: no-repeat;
-    margin-left: 20px;
-}
-
-.technology-content li  .technology-img-4{
+.technology__content li  .technology-img-3{
     width: 350px;
     height: 250px;
     border-radius: 8px;
@@ -368,28 +348,39 @@ ul.technology-content{
     margin-left: 20px;
 }
 
-.technology-content-1 {
+.technology__content li  .technology-img-4{
+    width: 350px;
+    height: 250px;
+    border-radius: 8px;
+    position: absolute;
+    top: 100;
+    z-index: -1;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+.technology__content-1 {
     margin-top: 125px;
     display: flex;
     justify-content: center;
 }
-.technology-content-2 h4{
+.technology__content-2 h4{
     font-weight: bold;
     font-size: 18px;
     padding: 33px 32px 0 34px;
 }
-.technology-content-2 p{
+.technology__content-2 p{
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     margin: 19px 20px 2px 20px;
     padding-bottom: 21px;
 }
-.technology-content-2 a{
+.technology__content-2 a{
     font-size: 12px;
     color: #ED4C5C;
 }
-.technology-content-2 {
+.technology__content-2 {
     margin-left: 36px;
     margin-top: 32px;
     width: 293px;
@@ -406,40 +397,40 @@ ul.technology-content{
     min-height: 500px;
     background-color: #ED4C5C;
 }
-.focused-size{
+.focused__size{
     width: 80%;
     flex-wrap: wrap;
 }
-ul.focused-content{
+ul.focused__content{
     display: flex;
 }
 
 
-.focused-content li{
+.focused__content li{
     padding: 20px;
 }
 
-.focused-content-icons{
+.focused__content-icons{
     display: flex;
     align-items: center;
     margin-left: 142px;
     display: flex;
 }
-.focused-content-icons li{
+.focused__content-icons li{
     padding: 0 23px 0 0;
 }
-.focused-content-left{
+.focused__content--left{
     width: 100%;
     color: white;
 }
 
-.focused-content-left h3{
+.focused__content--left h3{
     font-weight: 600;
     font-size: 36px;
     line-height: 43px;
     padding: 104px 100px 0 144px;
 }
-.focused-content-left p{
+.focused__content--left p{
     font-size: 14px;
     line-height: 140%;
     margin: 45px 84px 47px 146px;
@@ -448,17 +439,17 @@ ul.focused-content{
 span {
     padding-right: 84px;
 }
-.focused-content-right{
+.focused__content--right{
     flex-basis: 60%;
 }
-.focused-content-right .above{
+.focused__content--right .above{
     margin-top: 75px;
     width: 445px;
     height: 311px;
     z-index: 10;
     position: absolute;
 }
-.focused-content-right .under{
+.focused__content--right .under{
     margin: 95px 0 0 -45px;
     position: absolute;
     opacity: 0.5;
@@ -471,38 +462,38 @@ span {
     width: 80%;
     margin: 118px 0 0 174px;
 }
-.contact-size{
+.contact__size{
     min-height: 500px;
     // height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "contact-content contact-form";
+    "contact__content contact__form";
 }
-.contact-content{
-    grid-area: contact-content;
+.contact__content{
+    grid-area: contact__content;
 }
-.contact-form{
-    grid-area: contact-form;
+.contact__form{
+    grid-area: contact__form;
 }
-.contact-content h3{
+.contact__content h3{
     font-size: 36px;
     line-height: 43px;
 }
 
-.contact-content p{
+.contact__content p{
     font-size: 14px;
     line-height: 140%;
     text-align: justify;
     margin: 55px 139px 0 1px;
 }
-.contact-content span{
+.contact__content span{
     text-align-last: center;
     letter-spacing: 0.15px;
 }
 
-.contact-form .name{
+.contact__form .contact__name{
     margin-left: -14px;
 }
 
@@ -547,7 +538,7 @@ input[type="text"]::placeholder {
     color: rgba(19, 39, 67, 0.5);
 }
 
-.data {
+.contact__data {
     display: grid;
 }
 
@@ -562,17 +553,17 @@ input[type="text"]::placeholder {
 
 
 @media (max-width: 1230px){
-    ul.services-content{
+    ul.features__content{
         width: auto;
     }
 }
 @media all and (max-width: 1300px){
-    ul.services-content {
+    ul.features__content {
         width: auto;
         // display: block;
     }
 
-    .name {
+    .contact__name {
         display: grid;
     }
     input.last-name {
@@ -581,11 +572,11 @@ input[type="text"]::placeholder {
     }
 }
 @media all and (max-width: 1200px){
-    ul.services-content {
+    ul.features__content {
         width: auto;
         // display: block;
     }
-    .name {
+    .contact__name {
         display: grid;
     }
     input.last-name {
@@ -595,52 +586,52 @@ input[type="text"]::placeholder {
 }
 @media (max-width: 1000px){
     
-    header{
+    .header{
         padding: 20px 50px;
         flex-direction: column;
     }
-    .focused-content-right{
+    .focused__content--right{
         display: none;
     }
-    header .logo{
+    .header .header__logo{
         margin-bottom: 15px;
     }
     section{
         padding: 100px 50px;
     }
-    .contact-size {
-        grid-template-areas: "contact-content" "contact-form";
+    .contact__size {
+        grid-template-areas: "contact__content" "contact__form";
     }
-    .contact-form{
+    .contact__form{
         margin-top: 30px;
         text-align: center;
     }
     input.phone-number, input.select-service {
         width: auto;
     }
-    .contact-content p{
+    .contact__content p{
         margin: 0;
     }
 }
 
 
 @media (max-width: 768px){
-    .logo {
+    .header__logo {
         padding: 15px 0;
     }
-    nav.hero__navbar{
+    nav.header__nav{
         margin: 0;
         width: auto;
         display: contents;
     }
-    nav.hero__navbar ul{
+    nav.header__nav ul{
         margin: 0;
         width: auto;
         flex-direction: column;
         align-items: center;
         // max-width: 100%;
     }
-    nav.hero__navbar ul a {
+    nav.header__nav ul a {
         /* padding: 10px; */
         padding: 5px 40px;
         margin-bottom: 10px;
@@ -655,7 +646,7 @@ input[type="text"]::placeholder {
         // width: -webkit-stretch;
         border: 1px solid white;
     }
-    nav.hero__navbar ul a :hover{
+    nav.header__nav ul a :hover{
         color: #ED4C5C;
         background: white;
     }
@@ -663,11 +654,11 @@ input[type="text"]::placeholder {
         margin: 0 7px;
         display: contents;
     }
-    .banner-area {
+    .banner {
         padding-top: 200px;
     }
 
-    .banner-area .banner-img {
+    .banner .banner__img {
         min-height: 680px;
     }
     
@@ -677,13 +668,13 @@ input[type="text"]::placeholder {
         min-width: 100%;
         height: auto;
     }
-    header{
+    .header{
         flex-direction: column;
     }
-    header .logo{
+    .header .header__logo{
         margin-bottom: 15px;
     }
-    header nav li{
+    .header nav li{
         margin: 0 7px;
     }
     .features {
@@ -695,23 +686,23 @@ input[type="text"]::placeholder {
         // padding: 125px 30px;
         padding: 0;
     }
-    .services-content li .services-img-1 {
+    .features__content li .features__img-1 {
         margin-left: 7px;
     }
-    .services-content li .services-img-2 {
+    .features__content li .features__img-2 {
         margin-left: 7px;
     }
-    .services-content li .services-img-3 {
+    .features__content li .features__img-3 {
         margin-left: 7px;
     }
-    .banner-area h1{
+    .banner h1{
         // font-size: 32px;
         display: none;
     }
-    ul.services-content {
+    ul.features__content {
         justify-content: flex-start;
     }
-    .services-content li {
+    .features__content li {
         margin: auto;
         height: auto;
         padding-bottom: 40px;
@@ -726,44 +717,44 @@ input[type="text"]::placeholder {
     .technology .section-title {
         margin-top: 0;
     }
-    .technology-content {
+    .technology__content {
         margin-top: 50px; 
     }
-    .technology-box {
+    .technology__box {
         width: 100%;
     }
-    .technology-box li {
+    .technology__box li {
         flex-basis: auto;
         height: auto;
         margin-bottom: 40px;
     }
-    .technology-box li:last-child{
+    .technology__box li:last-child{
         margin-bottom: 0;
     }
-    .technology-number {
+    .technology__number {
         margin: 0 30vw;
     }
     .focused {
         min-height: auto;
         padding-bottom: 10px;
     }
-    .focused-size {
+    .focused__size {
         width: 100%; 
     }
-    .focused-content-left h3 {
+    .focused__content--left h3 {
         padding: 0;
         text-align: center;
     }
-    .focused-content-left p {
+    .focused__content--left p {
         margin: 30px 10px;
         text-align-last: auto;
     }
-    .focused-content-icons {
+    .focused__content-icons {
         justify-content: center;
         margin: 0;
     }
 
-    .contact-size {
+    .contact__size {
         display: flex;
         flex-direction: column;
     }
@@ -773,13 +764,13 @@ input[type="text"]::placeholder {
         text-align: center;
         margin: 30px;
     }
-    .contact-content h3 {
+    .contact__content h3 {
         margin-bottom: 25px;
     }
-    input.first-name, input.last-name, input.first-name {
+    input.first-name, input.last-name{
         width: auto;
     }
-    .contact-form .name {
+    .contact__form .contact__name {
          margin-left: 0; 
     }
     input.phone-number, input.select-service {
