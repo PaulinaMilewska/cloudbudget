@@ -154,20 +154,24 @@
                         24
                         hours</span></p>
             </div>
-            <div class="contact__form">
-                <div class="contact__name">
-                    <input class="first-name" type="text" placeholder="First name">
-                    <input class="last-name" type="text" placeholder="Last name">
+            <form name="form">
+                <div class="contact__form">
+                    <div class="contact__name">
+                        <input class="first-name" type="text" id="first-name" placeholder="First name" required>
+                        <input class="last-name" type="text" id="last-name" placeholder="Last name" required>
+                    </div>
+                    <div class="contact__data">
+                        <input class="phone-number" type="number" id="phone-number" placeholder="Phone number" required>
+                        <input class="select-service" type="text" id="select-service" placeholder="Select Service"
+                            required>
+                    </div>
+                    <button type="submit" onclick="validation()">Submit now</button>
+                    <p class="validation" id="validation-text"></p>
                 </div>
-                <div class="contact__data">
-                    <input class="phone-number" type="text" placeholder="Phone number">
-                    <input class="select-service" type="text" placeholder="Select Service">
-                </div>
-                <button type="submit">Submit now</button>
-            </div>
+            </form>
         </div>
     </section>
-
+    <script src="validation.js"></script>
 </body>
 
 </html>

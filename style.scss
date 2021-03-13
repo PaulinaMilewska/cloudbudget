@@ -6,9 +6,9 @@
 
 body{
 font-family: 'Lato', sans-serif;
-// width: 1440px;
-// height: 2942px;
-width: 100%;
+width: 1440px;
+height: 2942px;
+// width: 100%;
 }
 
 ul, nav{
@@ -519,23 +519,32 @@ button {
 }
 
 input[type="text"]::placeholder {
-    padding-left: 29px;
+    // padding-left: 29px;
     font-size: 16px;
     line-height: 19px;
     color: rgba(19, 39, 67, 0.5);
 }
 
-
-
-
-
-
-
-
-
-
-
-
+input[type=text]:focus {
+    background-color: #dbbec2;
+    // opacity: 0.2;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+}
+input{
+    padding-left: 29px;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+}
+.validation{
+    padding-top: 5px;
+    margin-left: -20px;
+    font-size: 32px;
+    font-weight: 600;
+    color: gray;
+}
 @media (max-width: 1230px){
     ul.features__content{
         width: auto;
@@ -544,7 +553,6 @@ input[type="text"]::placeholder {
 @media all and (max-width: 1300px){
     ul.features__content {
         width: auto;
-        // display: block;
     }
 
     .contact__name {
@@ -567,9 +575,19 @@ input[type="text"]::placeholder {
         margin-top: 26px;
         margin-left: 0px;
     }
+    input.phone-number, input.select-service {
+        margin-left: 0;
+        width: 100%;
+    }
+    .features {
+        height: auto;
+        min-height: 600px;
+    }
+    .technology{
+        height: auto;
+    }
 }
 @media (max-width: 1000px){
-    
     .header{
         padding: 20px 50px;
         flex-direction: column;
@@ -612,9 +630,6 @@ input[type="text"]::placeholder {
             padding-bottom: 20px;
         }
     }
-    // .section__title {
-    //     padding-bottom: 20px;
-    // }
     .header{
         flex-direction: column;
         &__logo {

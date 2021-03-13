@@ -7,7 +7,8 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  width: 100%;
+  width: 1440px;
+  height: 2942px;
 }
 
 ul, nav {
@@ -647,31 +648,49 @@ button {
 }
 
 input[type="text"]::-webkit-input-placeholder {
-  padding-left: 29px;
   font-size: 16px;
   line-height: 19px;
   color: rgba(19, 39, 67, 0.5);
 }
 
 input[type="text"]:-ms-input-placeholder {
-  padding-left: 29px;
   font-size: 16px;
   line-height: 19px;
   color: rgba(19, 39, 67, 0.5);
 }
 
 input[type="text"]::-ms-input-placeholder {
-  padding-left: 29px;
   font-size: 16px;
   line-height: 19px;
   color: rgba(19, 39, 67, 0.5);
 }
 
 input[type="text"]::placeholder {
-  padding-left: 29px;
   font-size: 16px;
   line-height: 19px;
   color: rgba(19, 39, 67, 0.5);
+}
+
+input[type=text]:focus {
+  background-color: #dbbec2;
+  font-size: 16px;
+  line-height: 19px;
+  color: black;
+}
+
+input {
+  padding-left: 29px;
+  font-size: 16px;
+  line-height: 19px;
+  color: black;
+}
+
+.validation {
+  padding-top: 5px;
+  margin-left: -20px;
+  font-size: 32px;
+  font-weight: 600;
+  color: gray;
 }
 
 @media (max-width: 1230px) {
@@ -705,6 +724,17 @@ input[type="text"]::placeholder {
   input.last-name {
     margin-top: 26px;
     margin-left: 0px;
+  }
+  input.phone-number, input.select-service {
+    margin-left: 0;
+    width: 100%;
+  }
+  .features {
+    height: auto;
+    min-height: 600px;
+  }
+  .technology {
+    height: auto;
   }
 }
 
